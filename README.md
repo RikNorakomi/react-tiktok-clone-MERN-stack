@@ -1,3 +1,25 @@
+## Tech used
+
+### FrontEnd:
+
+- React, firebase hosting
+- MaterialUI, FlexBox, 3th party ticker library, scroll snap
+
+### BackEnd
+
+- Node.js, Express.js server
+- MongoDB, hosting on Heroku
+- Mongoose
+
+## packages installed:
+
+- npm install @material-ui/core
+- npm install @material-ui/icons
+- npm i react-ticker
+
+Tutorial at:
+https://www.youtube.com/watch?v=g8yGxDMyGiE
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
