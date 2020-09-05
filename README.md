@@ -17,6 +17,37 @@
 - npm install @material-ui/icons
 - npm i react-ticker
 
+// For backend add folder & cd into it
+- npm init > define entry point as server.js instead of index.js
+
+Now go into the created pakage.json file in the tiktok-backend folder and add the following line to the [scripts] object:
+ "start": "node server.js"
+ 
+ and also add the line:
+ "type": "module",
+ This will give you ES6 syntax and help with importing classes into your server.js file instead of doing it old school style.
+ 
+ - npm i express mongoose
+ 
+ ### Setting up the MongoDB cloud server
+ Go to mongoDB.com and signIn with your Google account:
+ If you sign in for the first time you will be asked to define a cloud provider (AWS, Google, Azure) and a region where you want your databse to be setup (Europe/US/etc.). For now we just leave all configurations as is and create a DB with AWS.
+
+-npm i -g nodemon
+install this dependency for your homecomputer. If you have done this in the past it is no longer required cause it is already installed.
+
+Now run the command:
+- nodemon server.js to start the server and listen to localhost: with the defined port
+
+## Configuring MongoDB
+When you've create a MongoDB cluster set up the following
+- Go to SECURITY -> Database access to create a user with username and password for your client to auth and connect to MongoDB with
+- Go to SECURITY -> Network Access nad for testing purposes you can select 'allow access from anywhere' (DONT DO THIS FOR PRODUCTION EVNIRONMENT!)
+
+## Using Postman to create request for your backend
+--- xxx ---
+
+##Tutorial
 Tutorial at:
 https://www.youtube.com/watch?v=g8yGxDMyGiE
 
