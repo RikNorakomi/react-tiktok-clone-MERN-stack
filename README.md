@@ -43,9 +43,37 @@ Now run the command:
 When you've create a MongoDB cluster set up the following
 - Go to SECURITY -> Database access to create a user with username and password for your client to auth and connect to MongoDB with
 - Go to SECURITY -> Network Access nad for testing purposes you can select 'allow access from anywhere' (DONT DO THIS FOR PRODUCTION EVNIRONMENT!)
+- Go to DATA STORAGE -> Clusters => click on connect and go with Connect your Application. And copy the connection string into your application (server.js)
 
 ## Using Postman to create request for your backend
 --- xxx ---
+
+## Deploying the backend server to Heroku
+- create an account via Heroku.com (it's free!)
+- login to: https://dashboard.heroku.com/apps
+Click on => create new app
+
+Install the Heroku CLI if not installed and follow the following as shown on the herok page:
+https://dashboard.heroku.com/apps/tiktok-mern-backend-tutorial/deploy/heroku-git
+
+$ heroku login
+Clone the repository
+Use Git to clone tiktok-mern-backend-tutorial's source code to your local machine.
+
+$ heroku git:clone -a tiktok-mern-backend-tutorial
+$ cd tiktok-mern-backend-tutorial
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+- heroku run npm install 
+
+(- heroku run npm start )
+
+in the Heroku  dashboard get the backend url via Settings => Domain => copy/paste
 
 ##Tutorial
 Tutorial at:
